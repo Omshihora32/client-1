@@ -1597,3 +1597,223 @@ img {
         gap: 80px;
     }
 }
+
+/* ============================================
+   MENU HIGHLIGHTS SECTION
+   ============================================ */
+
+.menu-section {
+    padding: 80px 0;
+    background: var(--primary-black);
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.menu-tab {
+    padding: 10px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.menu-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+.menu-tab.active {
+    background: var(--accent-lime);
+    border-color: var(--accent-lime);
+    color: var(--primary-black);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(136, 196, 37, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item.hidden {
+    display: none;
+}
+
+.menu-item-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+    transform: scale(1.08);
+}
+
+.menu-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.menu-badge.bestseller {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+    color: #fff;
+}
+
+.menu-badge.chef-special {
+    background: linear-gradient(135deg, var(--accent-gold), #d4af37);
+    color: var(--primary-black);
+}
+
+.menu-item-content {
+    padding: 20px;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-item-header h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.menu-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-lime);
+}
+
+.menu-item-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.menu-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.menu-tag.veg {
+    background: rgba(76, 175, 80, 0.15);
+    color: #4CAF50;
+}
+
+.menu-tag.non-veg {
+    background: rgba(244, 67, 54, 0.15);
+    color: #F44336;
+}
+
+.menu-cta {
+    text-align: center;
+    padding: 40px;
+    background: rgba(136, 196, 37, 0.05);
+    border: 1px solid rgba(136, 196, 37, 0.2);
+    border-radius: var(--radius-lg);
+}
+
+.menu-cta p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.menu-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-cta .btn i {
+    font-size: 1.2rem;
+}
+
+/* Menu Section Responsive */
+@media (min-width: 640px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    
+    .menu-item-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-categories {
+        gap: 8px;
+    }
+    
+    .menu-tab {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .menu-item-image {
+        height: 180px;
+    }
+    
+    .menu-cta {
+        padding: 25px 20px;
+    }
+    
+    .menu-cta p {
+        font-size: 0.95rem;
+    }
+}
