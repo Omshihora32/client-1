@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Grenade Cafe & Restro</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,8 +133,169 @@
         </div>
     </section>
 
+    <!-- Menu Highlights Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="overline">OUR SPECIALTIES</span>
+                <h2>Menu <span class="text-lime">Highlights</span></h2>
+                <p class="quote">"Crafted with love, served with passion — discover our customer favorites."</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories fade-in-up">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="starters">Starters</button>
+                <button class="menu-tab" data-category="mains">Main Course</button>
+                <button class="menu-tab" data-category="beverages">Beverages</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Starter Items -->
+                <div class="menu-item fade-in-up" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Paneer Tikka">
+                        <span class="menu-badge bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Paneer Tikka</h4>
+                            <span class="menu-price">₹249</span>
+                        </div>
+                        <p>Succulent cottage cheese marinated in aromatic spices, grilled to perfection.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in-up" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Crispy Corn">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Crispy Corn</h4>
+                            <span class="menu-price">₹179</span>
+                        </div>
+                        <p>Golden fried corn kernels tossed with herbs and spices.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <!-- Main Course Items -->
+                <div class="menu-item fade-in-up" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Butter Chicken">
+                        <span class="menu-badge chef-special">Chef's Special</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Butter Chicken</h4>
+                            <span class="menu-price">₹349</span>
+                        </div>
+                        <p>Tender chicken in rich, creamy tomato-based curry with aromatic spices.</p>
+                        <span class="menu-tag non-veg"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in-up" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Veg Biryani">
+                        <span class="menu-badge bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Veg Dum Biryani</h4>
+                            <span class="menu-price">₹279</span>
+                        </div>
+                        <p>Fragrant basmati rice layered with vegetables and slow-cooked spices.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <!-- Beverage Items -->
+                <div class="menu-item fade-in-up" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Cold Coffee">
+                        <span class="menu-badge bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Cold Coffee</h4>
+                            <span class="menu-price">₹149</span>
+                        </div>
+                        <p>Creamy, chilled coffee blended with ice cream and chocolate.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in-up" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Mojito">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Virgin Mojito</h4>
+                            <span class="menu-price">₹129</span>
+                        </div>
+                        <p>Refreshing mint and lime mocktail with a splash of soda.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <!-- Dessert Items -->
+                <div class="menu-item fade-in-up" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Chocolate Brownie">
+                        <span class="menu-badge chef-special">Chef's Special</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Chocolate Brownie</h4>
+                            <span class="menu-price">₹169</span>
+                        </div>
+                        <p>Warm, gooey brownie topped with vanilla ice cream and chocolate sauce.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in-up" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Gulab Jamun">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Gulab Jamun</h4>
+                            <span class="menu-price">₹99</span>
+                        </div>
+                        <p>Soft, spongy dumplings soaked in rose-flavored sugar syrup.</p>
+                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Full Menu CTA -->
+            <div class="menu-cta fade-in-up">
+                <p>Want to see our complete menu with 50+ dishes?</p>
+                <a href="https://wa.me/916355470232?text=Hi!%20I%20would%20like%20to%20see%20the%20full%20menu%20of%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> View Full Menu on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience / Gallery Section -->
-    <section class="experience-section" id="menu">
+    <section class="experience-section" id="gallery">
         <div class="container">
             <div class="section-header fade-in-up">
                 <span class="overline">OUR ATMOSPHERE</span>
@@ -217,7 +380,7 @@
                         </div>
                         <div class="info-content">
                             <h4>Contact Us</h4>
-                            <p><a href="tel:+919876543210">+91 98765 43210</a><br>
+                            <p><a href="tel:+916355470232">+91 63554 70232</a><br>
                                 <a href="mailto:hello@thegrenadecafe.com">hello@thegrenadecafe.com</a>
                             </p>
                         </div>
