@@ -4,19 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Grenade Cafe & Restro</title>
-    <!-- Favicon -->
+    <title>The Grenade Cafe & Restro | Varachha, Surat</title>
+    <meta name="description" content="The Grenade Cafe & Restro - Premium casual dining in Varachha, Surat.">
     <link rel="icon" type="image/png" href="favicon.png">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-styles.css">
 </head>
 
 <body>
@@ -54,7 +52,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#reserve" class="btn btn-primary">Book Table</a>
+                <a href="https://wa.me/916355470232?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-primary">Book Table</a>
                 <button class="mobile-toggle" aria-label="Toggle Menu">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -79,15 +78,16 @@
         <div class="hero-content fade-in-up">
             <div class="badge">Premium Casual Dining</div>
             <h1>Where Great Food Meets a <span class="italic-accent">Perfect Vibe</span></h1>
-            <p>Experience the best of Surat with our curated menu and vibrant atmosphere.</p>
+            <p>Experience the best of Surat with our delicious sandwiches, refreshing shakes, and cozy atmosphere.</p>
             <div class="hero-btns">
                 <a href="#menu" class="btn btn-primary">Explore Menu</a>
-                <a href="#about" class="btn btn-outline">Our Story</a>
+                <a href="https://wa.me/916355470232?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll to Discover</span>
-            <div class="line"></div>
+            <div class="mouse"></div>
+            <span>Scroll</span>
         </div>
     </header>
 
@@ -100,233 +100,149 @@
                     <h2>The Grenade <span class="sub-script">Cafe & Restro</span></h2>
                 </div>
                 <div class="intro-text">
-                    <h3>Surat's Premium <span class="text-lime">Casual Dining</span></h3>
-                    <p>A modern sanctuary in Surat offering a perfect blend of exquisite taste, stylish ambiance, and
-                        warm hospitality.</p>
+                    <h3>Varachha's Favorite <span class="text-lime">Hangout Spot</span></h3>
+                    <p>A cozy cafe in Varachha, Surat offering delicious food, refreshing beverages, and a vibrant
+                        atmosphere perfect for casual meetups with friends and family.</p>
                     <div class="leaf-divider"><i class="fas fa-leaf"></i></div>
                 </div>
                 <div class="features-list">
                     <div class="feature-item">
                         <div class="icon-circle"><i class="fas fa-utensils"></i></div>
                         <div class="feature-text">
-                            <h4>Culinary Excellence</h4>
-                            <p>Consistently delicious food</p>
+                            <h4>Tasty Sandwiches</h4>
+                            <p>Our signature grilled sandwiches</p>
                         </div>
                     </div>
                     <div class="feature-item">
-                        <div class="icon-circle"><i class="fas fa-couch"></i></div>
+                        <div class="icon-circle"><i class="fas fa-coffee"></i></div>
                         <div class="feature-text">
-                            <h4>Stylish Ambiance</h4>
-                            <p>A thoughtfully designed modern space.</p>
+                            <h4>Great Coffee</h4>
+                            <p>Hot & cold coffee favorites</p>
                         </div>
                     </div>
                     <div class="feature-item">
-                        <div class="icon-circle"><i class="fas fa-heart"></i></div>
+                        <div class="icon-circle"><i class="fas fa-glass-cheers"></i></div>
                         <div class="feature-text">
-                            <h4>Warm Hospitality</h4>
-                            <p>Attentive service that anticipates your needs.</p>
+                            <h4>Refreshing Shakes</h4>
+                            <p>Chocolate, Oreo & more</p>
                         </div>
                     </div>
                 </div>
-                <a href="#reserve" class="btn btn-primary full-width">Book Your Experience</a>
+                <a href="https://wa.me/916355470232?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-primary full-width"><i class="fab fa-whatsapp"></i> Book Your Table
+                    on WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- Menu Highlights Section -->
+    <!-- Menu Section -->
     <section class="menu-section" id="menu">
         <div class="container">
             <div class="section-header fade-in-up">
-                <span class="overline">OUR SPECIALTIES</span>
-                <h2>Menu <span class="text-lime">Highlights</span></h2>
-                <p class="quote">"Crafted with love, served with passion — discover our customer favorites."</p>
+                <span class="overline">OUR MENU</span>
+                <h2>What We <span class="text-lime">Serve</span></h2>
+                <p class="quote">"Crafted with love, served with passion"</p>
             </div>
 
-            <!-- Menu Categories -->
-            <div class="menu-categories fade-in-up">
-                <button class="menu-tab active" data-category="all">All</button>
-                <button class="menu-tab" data-category="starters">Starters</button>
-                <button class="menu-tab" data-category="mains">Main Course</button>
-                <button class="menu-tab" data-category="beverages">Beverages</button>
-                <button class="menu-tab" data-category="desserts">Desserts</button>
-            </div>
-
-            <!-- Menu Grid -->
-            <div class="menu-grid">
-                <!-- Starter Items -->
-                <div class="menu-item fade-in-up" data-category="starters">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Paneer Tikka">
-                        <span class="menu-badge bestseller">Bestseller</span>
+            <div class="menu-simple fade-in-up">
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🥪</div>
+                    <div>
+                        <h3 class="menu-category-title">Sandwiches</h3>
+                        <p class="menu-items-list">Grilled · Club · Cheese</p>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Paneer Tikka</h4>
-                            <span class="menu-price">₹249</span>
-                        </div>
-                        <p>Succulent cottage cheese marinated in aromatic spices, grilled to perfection.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
+                    <span class="menu-price-range">₹80–150</span>
                 </div>
 
-                <div class="menu-item fade-in-up" data-category="starters">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Crispy Corn">
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">☕</div>
+                    <div>
+                        <h3 class="menu-category-title">Beverages</h3>
+                        <p class="menu-items-list">Coffee · Cold Coffee · Tea</p>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Crispy Corn</h4>
-                            <span class="menu-price">₹179</span>
-                        </div>
-                        <p>Golden fried corn kernels tossed with herbs and spices.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
+                    <span class="menu-price-range">₹40–100</span>
                 </div>
 
-                <!-- Main Course Items -->
-                <div class="menu-item fade-in-up" data-category="mains">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Butter Chicken">
-                        <span class="menu-badge chef-special">Chef's Special</span>
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🥤</div>
+                    <div>
+                        <h3 class="menu-category-title">Shakes</h3>
+                        <p class="menu-items-list">Chocolate · Oreo · Fruit</p>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Butter Chicken</h4>
-                            <span class="menu-price">₹349</span>
-                        </div>
-                        <p>Tender chicken in rich, creamy tomato-based curry with aromatic spices.</p>
-                        <span class="menu-tag non-veg"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
-                    </div>
+                    <span class="menu-price-range">₹80–150</span>
                 </div>
 
-                <div class="menu-item fade-in-up" data-category="mains">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Veg Biryani">
-                        <span class="menu-badge bestseller">Bestseller</span>
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🍕</div>
+                    <div>
+                        <h3 class="menu-category-title">Quick Bites</h3>
+                        <p class="menu-items-list">Pizza · Rolls · Chaat</p>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Veg Dum Biryani</h4>
-                            <span class="menu-price">₹279</span>
-                        </div>
-                        <p>Fragrant basmati rice layered with vegetables and slow-cooked spices.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
+                    <span class="menu-price-range">₹100–200</span>
                 </div>
 
-                <!-- Beverage Items -->
-                <div class="menu-item fade-in-up" data-category="beverages">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Cold Coffee">
-                        <span class="menu-badge bestseller">Bestseller</span>
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🍟</div>
+                    <div>
+                        <h3 class="menu-category-title">Snacks</h3>
+                        <p class="menu-items-list">French Fries · Samosa</p>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Cold Coffee</h4>
-                            <span class="menu-price">₹149</span>
-                        </div>
-                        <p>Creamy, chilled coffee blended with ice cream and chocolate.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
+                    <span class="menu-price-range">₹40–80</span>
                 </div>
 
-                <div class="menu-item fade-in-up" data-category="beverages">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Mojito">
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🍰</div>
+                    <div>
+                        <h3 class="menu-category-title">Desserts</h3>
+                        <p class="menu-items-list">Cakes · Ice Cream</p>
                     </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Virgin Mojito</h4>
-                            <span class="menu-price">₹129</span>
-                        </div>
-                        <p>Refreshing mint and lime mocktail with a splash of soda.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
-                </div>
-
-                <!-- Dessert Items -->
-                <div class="menu-item fade-in-up" data-category="desserts">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Chocolate Brownie">
-                        <span class="menu-badge chef-special">Chef's Special</span>
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Chocolate Brownie</h4>
-                            <span class="menu-price">₹169</span>
-                        </div>
-                        <p>Warm, gooey brownie topped with vanilla ice cream and chocolate sauce.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
-                </div>
-
-                <div class="menu-item fade-in-up" data-category="desserts">
-                    <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Gulab Jamun">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h4>Gulab Jamun</h4>
-                            <span class="menu-price">₹99</span>
-                        </div>
-                        <p>Soft, spongy dumplings soaked in rose-flavored sugar syrup.</p>
-                        <span class="menu-tag veg"><i class="fas fa-leaf"></i> Veg</span>
-                    </div>
+                    <span class="menu-price-range">₹60–150</span>
                 </div>
             </div>
 
-            <!-- View Full Menu CTA -->
             <div class="menu-cta fade-in-up">
-                <p>Want to see our complete menu with 50+ dishes?</p>
-                <a href="https://wa.me/916355470232?text=Hi!%20I%20would%20like%20to%20see%20the%20full%20menu%20of%20The%20Grenade%20Cafe."
+                <p>📲 Ask for today's special & full menu</p>
+                <a href="https://wa.me/916355470232?text=Hi!%20I'd%20like%20to%20see%20the%20full%20menu%20at%20The%20Grenade%20Cafe."
                     target="_blank" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i> View Full Menu on WhatsApp
+                    <i class="fab fa-whatsapp"></i> View Full Menu
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Experience / Gallery Section -->
+    <!-- Gallery Section -->
     <section class="experience-section" id="gallery">
         <div class="container">
             <div class="section-header fade-in-up">
                 <span class="overline">OUR ATMOSPHERE</span>
                 <h2>Experience The Grenade</h2>
-                <p class="quote">"A cozy, stylish space designed for great conversations and memorable moments."</p>
+                <p class="quote">"A cozy, stylish space designed for great conversations."</p>
             </div>
             <div class="gallery-grid">
                 <div class="gallery-card large fade-in-up">
                     <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                         alt="Main Hall">
-                    <span class="tag">MAIN HALL</span>
+                    <span class="tag">COZY INTERIORS</span>
                 </div>
                 <div class="gallery-card medium fade-in-up">
                     <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="Signature Bites">
-                    <span class="tag">Signature Bites</span>
+                    <span class="tag">Tasty Bites</span>
                 </div>
                 <div class="gallery-card medium fade-in-up">
                     <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="Cozy Corners">
-                    <span class="tag">Cozy Corners</span>
+                    <span class="tag">Perfect Ambiance</span>
                 </div>
                 <div class="gallery-card small fade-in-up">
                     <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="Ambiance">
                 </div>
                 <div class="gallery-card small view-more fade-in-up">
-                    <div class="overlay-content">
-                        <i class="far fa-images"></i>
-                        <span>VIEW GALLERY</span>
-                    </div>
+                    <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank" class="overlay-content">
+                        <i class="fab fa-instagram"></i>
+                        <span>VIEW ON INSTAGRAM</span>
+                    </a>
                     <img src="https://images.unsplash.com/photo-1466978913421-dad938667254?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="Gallery">
                 </div>
@@ -338,144 +254,71 @@
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-header fade-in-up">
-                <span class="overline">GET IN TOUCH</span>
+                <span class="overline">VISIT US</span>
                 <h2>Find Us Here</h2>
-                <p class="quote">"Visit us for an unforgettable dining experience in the heart of Surat."</p>
             </div>
             <div class="contact-wrapper fade-in-up">
-                <!-- Google Maps Embed -->
                 <div class="map-container">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.545686389!2d72.65756505!3d21.159185749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1703580000000!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.3!2d72.8547!3d21.2108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f3e9c7a9a9f%3A0x8e9f9a9a9a9a9a9a!2sSilver%20Plaza%2C%20Varachha%2C%20Surat%2C%20Gujarat%20395010!5e0!3m2!1sen!2sin!4v1703580000000!5m2!1sen!2sin"
                         width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        loading="lazy"></iframe>
                 </div>
-                <!-- Contact Info -->
                 <div class="contact-info">
                     <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="info-content">
                             <h4>Our Location</h4>
-                            <p>Ring Road, Athwa Gate<br>Surat, Gujarat 395001</p>
-                            <a href="https://www.google.com/maps/dir//Surat,+Gujarat" target="_blank" class="info-link">
-                                Get Directions <i class="fas fa-arrow-right"></i>
-                            </a>
+                            <p>Shop No. 18, 19, Silver Plaza<br>Varachha, Surat 395010</p>
+                            <a href="https://www.google.com/maps/search/The+Grenade+Cafe+Silver+Plaza+Varachha+Surat"
+                                target="_blank" class="info-link">Get Directions <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
                         <div class="info-content">
                             <h4>Opening Hours</h4>
-                            <p>Mon - Fri: 11:00 AM - 11:00 PM<br>Sat - Sun: 10:00 AM - 12:00 AM</p>
+                            <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
                         </div>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
+                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
                         <div class="info-content">
                             <h4>Contact Us</h4>
-                            <p><a href="tel:+916355470232">+91 63554 70232</a><br>
-                                <a href="mailto:hello@thegrenadecafe.com">hello@thegrenadecafe.com</a>
-                            </p>
+                            <p><a href="https://wa.me/916355470232">+91 63554 70232</a></p>
+                            <a href="https://wa.me/916355470232?text=Hi!" target="_blank" class="info-link">Message on
+                                WhatsApp <i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank" class="social-icon"
-                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/916355470232" target="_blank" class="social-icon"
-                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank"
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/916355470232" target="_blank" class="social-icon"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reserve a Table Section -->
+    <!-- Reserve Section -->
     <section class="reserve-section" id="reserve">
         <div class="container">
             <div class="reserve-wrapper fade-in-up">
-                <div class="reserve-content">
+                <div class="reserve-content reserve-content-full">
                     <span class="overline">READY TO VISIT?</span>
                     <h2>Reserve Your <span class="text-lime">Table</span></h2>
-                    <p>Book ahead for a guaranteed spot at Surat's most loved cafe. Perfect for dates, celebrations, or
-                        casual hangouts.</p>
+                    <p>Book ahead for a guaranteed spot at Varachha's favorite cafe.</p>
                     <div class="reserve-features">
-                        <div class="reserve-feature">
-                            <i class="fas fa-calendar-check"></i>
-                            <span>Easy Booking</span>
-                        </div>
-                        <div class="reserve-feature">
-                            <i class="fas fa-users"></i>
-                            <span>Groups Welcome</span>
-                        </div>
-                        <div class="reserve-feature">
-                            <i class="fas fa-birthday-cake"></i>
-                            <span>Special Occasions</span>
-                        </div>
+                        <div class="reserve-feature"><i class="fas fa-comments"></i><span>Quick Response</span></div>
+                        <div class="reserve-feature"><i class="fas fa-users"></i><span>Groups Welcome</span></div>
+                        <div class="reserve-feature"><i class="fas fa-birthday-cake"></i><span>Celebrations</span></div>
                     </div>
-                </div>
-                <div class="reserve-form-container">
-                    <form class="reserve-form" id="reservationForm">
-                        <div class="form-group">
-                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone"><i class="fas fa-phone"></i> Phone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="guests"><i class="fas fa-users"></i> Guests</label>
-                                <select id="guests" name="guests" required>
-                                    <option value="">Select</option>
-                                    <option value="1">1 Person</option>
-                                    <option value="2">2 Persons</option>
-                                    <option value="3-4">3-4 Persons</option>
-                                    <option value="5-6">5-6 Persons</option>
-                                    <option value="7+">7+ Persons</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date"><i class="fas fa-calendar"></i> Date</label>
-                                <input type="date" id="date" name="date" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="time"><i class="fas fa-clock"></i> Time</label>
-                                <select id="time" name="time" required>
-                                    <option value="">Select Time</option>
-                                    <option value="11:00">11:00 AM</option>
-                                    <option value="12:00">12:00 PM</option>
-                                    <option value="13:00">1:00 PM</option>
-                                    <option value="14:00">2:00 PM</option>
-                                    <option value="15:00">3:00 PM</option>
-                                    <option value="16:00">4:00 PM</option>
-                                    <option value="17:00">5:00 PM</option>
-                                    <option value="18:00">6:00 PM</option>
-                                    <option value="19:00">7:00 PM</option>
-                                    <option value="20:00">8:00 PM</option>
-                                    <option value="21:00">9:00 PM</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="occasion"><i class="fas fa-star"></i> Special Occasion (Optional)</label>
-                            <input type="text" id="occasion" name="occasion" placeholder="Birthday, Anniversary, etc.">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <i class="fas fa-paper-plane"></i> Reserve Now
-                        </button>
-                    </form>
+                    <a href="https://wa.me/916355470232?text=Hi!%20I'd%20like%20to%20book%20a%20table." target="_blank"
+                        class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> Book Table on WhatsApp
+                    </a>
+                    <p class="reserve-note">We'll confirm your booking within minutes!</p>
                 </div>
             </div>
         </div>
@@ -488,13 +331,18 @@
                 <div class="footer-brand">
                     <h3>The Grenade <span class="text-lime">Cafe</span></h3>
                     <p>Where Great Food Meets a Perfect Vibe</p>
+                    <p class="footer-address">Silver Plaza, Varachha, Surat</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#menu">Menu</a>
                     <a href="#contact">Contact</a>
-                    <a href="#reserve">Reserve</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank">
+                        <i class="fab fa-instagram"></i> @the_grenade_cafe_restro
+                    </a>
                 </div>
                 <div class="footer-copyright">
                     <p>&copy; 2024 The Grenade Cafe & Restro. All rights reserved.</p>
