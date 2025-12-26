@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grenade Cafe & Restro</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span class="loader-letter">T</span>
+                <span class="loader-letter">h</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">&nbsp;</span>
+                <span class="loader-letter">G</span>
+                <span class="loader-letter">r</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">n</span>
+                <span class="loader-letter">a</span>
+                <span class="loader-letter">d</span>
+                <span class="loader-letter">e</span>
+            </div>
+            <div class="loader-subtext">Cafe & Restro</div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">The Grenade <span class="logo-sub">Cafe</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#reserve" class="btn btn-primary">Book Table</a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu"><i class="fas fa-times"></i></button>
+        <ul class="mobile-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <div class="badge">Premium Casual Dining</div>
+            <h1>Where Great Food Meets a <span class="italic-accent">Perfect Vibe</span></h1>
+            <p>Experience the best of Surat with our curated menu and vibrant atmosphere.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#about" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Discover</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-card fade-in-up">
+                <div class="about-header">
+                    <span class="est">EST. 2024</span>
+                    <h2>The Grenade <span class="sub-script">Cafe & Restro</span></h2>
+                </div>
+                <div class="intro-text">
+                    <h3>Surat's Premium <span class="text-lime">Casual Dining</span></h3>
+                    <p>A modern sanctuary in Surat offering a perfect blend of exquisite taste, stylish ambiance, and
+                        warm hospitality.</p>
+                    <div class="leaf-divider"><i class="fas fa-leaf"></i></div>
+                </div>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="fas fa-utensils"></i></div>
+                        <div class="feature-text">
+                            <h4>Culinary Excellence</h4>
+                            <p>Consistently delicious food</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="fas fa-couch"></i></div>
+                        <div class="feature-text">
+                            <h4>Stylish Ambiance</h4>
+                            <p>A thoughtfully designed modern space.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="fas fa-heart"></i></div>
+                        <div class="feature-text">
+                            <h4>Warm Hospitality</h4>
+                            <p>Attentive service that anticipates your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#reserve" class="btn btn-primary full-width">Book Your Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Gallery Section -->
+    <section class="experience-section" id="menu">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="overline">OUR ATMOSPHERE</span>
+                <h2>Experience The Grenade</h2>
+                <p class="quote">"A cozy, stylish space designed for great conversations and memorable moments."</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card large fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Main Hall">
+                    <span class="tag">MAIN HALL</span>
+                </div>
+                <div class="gallery-card medium fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Signature Bites">
+                    <span class="tag">Signature Bites</span>
+                </div>
+                <div class="gallery-card medium fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Cozy Corners">
+                    <span class="tag">Cozy Corners</span>
+                </div>
+                <div class="gallery-card small fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Ambiance">
+                </div>
+                <div class="gallery-card small view-more fade-in-up">
+                    <div class="overlay-content">
+                        <i class="far fa-images"></i>
+                        <span>VIEW GALLERY</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad938667254?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="overline">GET IN TOUCH</span>
+                <h2>Find Us Here</h2>
+                <p class="quote">"Visit us for an unforgettable dining experience in the heart of Surat."</p>
+            </div>
+            <div class="contact-wrapper fade-in-up">
+                <!-- Google Maps Embed -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.545686389!2d72.65756505!3d21.159185749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1703580000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>Ring Road, Athwa Gate<br>Surat, Gujarat 395001</p>
+                            <a href="https://www.google.com/maps/dir//Surat,+Gujarat" target="_blank" class="info-link">
+                                Get Directions <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Opening Hours</h4>
+                            <p>Mon - Fri: 11:00 AM - 11:00 PM<br>Sat - Sun: 10:00 AM - 12:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Contact Us</h4>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a><br>
+                                <a href="mailto:hello@thegrenadecafe.com">hello@thegrenadecafe.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank" class="social-icon"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/916355470232" target="_blank" class="social-icon"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserve a Table Section -->
+    <section class="reserve-section" id="reserve">
+        <div class="container">
+            <div class="reserve-wrapper fade-in-up">
+                <div class="reserve-content">
+                    <span class="overline">READY TO VISIT?</span>
+                    <h2>Reserve Your <span class="text-lime">Table</span></h2>
+                    <p>Book ahead for a guaranteed spot at Surat's most loved cafe. Perfect for dates, celebrations, or
+                        casual hangouts.</p>
+                    <div class="reserve-features">
+                        <div class="reserve-feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Easy Booking</span>
+                        </div>
+                        <div class="reserve-feature">
+                            <i class="fas fa-users"></i>
+                            <span>Groups Welcome</span>
+                        </div>
+                        <div class="reserve-feature">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Special Occasions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reserve-form-container">
+                    <form class="reserve-form" id="reservationForm">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests"><i class="fas fa-users"></i> Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 Persons</option>
+                                    <option value="3-4">3-4 Persons</option>
+                                    <option value="5-6">5-6 Persons</option>
+                                    <option value="7+">7+ Persons</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date"><i class="fas fa-calendar"></i> Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time"><i class="fas fa-clock"></i> Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion"><i class="fas fa-star"></i> Special Occasion (Optional)</label>
+                            <input type="text" id="occasion" name="occasion" placeholder="Birthday, Anniversary, etc.">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Reserve Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-brand">
+                    <h3>The Grenade <span class="text-lime">Cafe</span></h3>
+                    <p>Where Great Food Meets a Perfect Vibe</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#reserve">Reserve</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 The Grenade Cafe & Restro. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Bar -->
+    <div class="floating-bar">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <a href="https://wa.me/916355470232" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+916355470232" class="call-btn">
+            <i class="fas fa-phone"></i> Call Now
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
