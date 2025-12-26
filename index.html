@@ -1,204 +1,368 @@
-// Intersection Observer for scroll animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+<!DOCTYPE html>
+<html lang="en">
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, observerOptions);
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grenade Cafe & Restro | Varachha, Surat</title>
+    <meta name="description" content="The Grenade Cafe & Restro - Premium casual dining in Varachha, Surat.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-styles.css">
+</head>
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Hide loader after animation completes
-    const loader = document.getElementById('loader');
-    if (loader) {
-        // Wait for the loading bar animation to complete (2.5s) + small buffer
-        setTimeout(() => {
-            loader.classList.add('hidden');
-            // Remove loader from DOM after transition completes
-            setTimeout(() => {
-                loader.remove();
-            }, 800);
-        }, 2800);
-    }
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span class="loader-letter">T</span>
+                <span class="loader-letter">h</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">&nbsp;</span>
+                <span class="loader-letter">G</span>
+                <span class="loader-letter">r</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">n</span>
+                <span class="loader-letter">a</span>
+                <span class="loader-letter">d</span>
+                <span class="loader-letter">e</span>
+            </div>
+            <div class="loader-subtext">Cafe & Restro</div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
 
-    // Observe all fade-in elements
-    document.querySelectorAll('.fade-in-up').forEach(el => {
-        observer.observe(el);
-    });
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">The Grenade <span class="logo-sub">Cafe</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/917435905500?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-primary">Book Table</a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    // ============================================
-    // MENU CATEGORY FILTER
-    // ============================================
-    const menuTabs = document.querySelectorAll('.menu-tab');
-    const menuItems = document.querySelectorAll('.menu-item');
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu"><i class="fas fa-times"></i></button>
+        <ul class="mobile-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
-    menuTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs
-            menuTabs.forEach(t => t.classList.remove('active'));
-            // Add active class to clicked tab
-            tab.classList.add('active');
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <div class="badge">Premium Casual Dining</div>
+            <h1>Where Great Food Meets a <span class="italic-accent">Perfect Vibe</span></h1>
+            <p>Experience the best of Surat with our delicious sandwiches, refreshing shakes, and cozy atmosphere.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="https://wa.me/917435905500?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </header>
 
-            const category = tab.dataset.category;
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-card fade-in-up">
+                <div class="about-header">
+                    <span class="est">EST. 2024</span>
+                    <h2>The Grenade <span class="sub-script">Cafe & Restro</span></h2>
+                </div>
+                <div class="intro-text">
+                    <h3>Varachha's Favorite <span class="text-lime">Hangout Spot</span></h3>
+                    <p>A cozy cafe in Varachha, Surat offering delicious food, refreshing beverages, and a vibrant
+                        atmosphere perfect for casual meetups with friends and family.</p>
+                    <div class="leaf-divider"><i class="fas fa-leaf"></i></div>
+                </div>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="fas fa-utensils"></i></div>
+                        <div class="feature-text">
+                            <h4>Tasty Sandwiches</h4>
+                            <p>Our signature grilled sandwiches</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="fas fa-coffee"></i></div>
+                        <div class="feature-text">
+                            <h4>Great Coffee</h4>
+                            <p>Hot & cold coffee favorites</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="fas fa-glass-cheers"></i></div>
+                        <div class="feature-text">
+                            <h4>Refreshing Shakes</h4>
+                            <p>Chocolate, Oreo & more</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/917435905500?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-primary full-width"><i class="fab fa-whatsapp"></i> Book Your Table
+                    on WhatsApp</a>
+            </div>
+        </div>
+    </section>
 
-            menuItems.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.classList.remove('hidden');
-                    item.style.animation = 'fadeInUp 0.5s ease forwards';
-                } else {
-                    item.classList.add('hidden');
-                }
-            });
-        });
-    });
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="overline">OUR MENU</span>
+                <h2>What We <span class="text-lime">Serve</span></h2>
+                <p class="quote">"Crafted with love, served with passion"</p>
+            </div>
 
-    // Mobile Menu Toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const closeMenu = document.querySelector('.close-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-links a');
+            <div class="menu-simple fade-in-up">
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🥪</div>
+                    <div>
+                        <h3 class="menu-category-title">Sandwiches</h3>
+                        <p class="menu-items-list">Grilled · Club · Cheese</p>
+                    </div>
+                    <span class="menu-price-range">₹80–150</span>
+                </div>
 
-    function toggleMenu() {
-        mobileMenu.classList.toggle('active');
-        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
-    }
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">☕</div>
+                    <div>
+                        <h3 class="menu-category-title">Beverages</h3>
+                        <p class="menu-items-list">Coffee · Cold Coffee · Tea</p>
+                    </div>
+                    <span class="menu-price-range">₹40–100</span>
+                </div>
 
-    if (mobileToggle) mobileToggle.addEventListener('click', toggleMenu);
-    if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🥤</div>
+                    <div>
+                        <h3 class="menu-category-title">Shakes</h3>
+                        <p class="menu-items-list">Chocolate · Oreo · Fruit</p>
+                    </div>
+                    <span class="menu-price-range">₹80–150</span>
+                </div>
 
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🍕</div>
+                    <div>
+                        <h3 class="menu-category-title">Quick Bites</h3>
+                        <p class="menu-items-list">Pizza · Rolls · Chaat</p>
+                    </div>
+                    <span class="menu-price-range">₹100–200</span>
+                </div>
 
-    // Parallax Effect for Hero
-    window.addEventListener('scroll', () => {
-        const hero = document.querySelector('.hero');
-        const scrolled = window.pageYOffset;
-        if (hero) {
-            hero.style.backgroundPositionY = -(scrolled * 0.3) + 'px';
-        }
-    });
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🍟</div>
+                    <div>
+                        <h3 class="menu-category-title">Snacks</h3>
+                        <p class="menu-items-list">French Fries · Samosa</p>
+                    </div>
+                    <span class="menu-price-range">₹40–80</span>
+                </div>
 
-    // Floating Bar Close
-    const closeBtn = document.querySelector('.close-btn');
-    const floatingBar = document.querySelector('.floating-bar');
+                <div class="menu-category-card">
+                    <div class="menu-category-icon">🍰</div>
+                    <div>
+                        <h3 class="menu-category-title">Desserts</h3>
+                        <p class="menu-items-list">Cakes · Ice Cream</p>
+                    </div>
+                    <span class="menu-price-range">₹60–150</span>
+                </div>
+            </div>
 
-    if (closeBtn && floatingBar) {
-        closeBtn.addEventListener('click', () => {
-            floatingBar.style.display = 'none';
-        });
-    }
+            <div class="menu-cta fade-in-up">
+                <p>📲 Ask for today's special & full menu</p>
+                <a href="https://wa.me/917435905500?text=Hi!%20I'd%20like%20to%20see%20the%20full%20menu%20at%20The%20Grenade%20Cafe."
+                    target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> View Full Menu
+                </a>
+            </div>
+        </div>
+    </section>
 
-    // Active Link Highlighting
-    const sections = document.querySelectorAll('section, header');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    <!-- Gallery Section -->
+    <section class="experience-section" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="overline">OUR ATMOSPHERE</span>
+                <h2>Experience The Grenade</h2>
+                <p class="quote">"A cozy, stylish space designed for great conversations."</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card large fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Main Hall">
+                    <span class="tag">COZY INTERIORS</span>
+                </div>
+                <div class="gallery-card medium fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Signature Bites">
+                    <span class="tag">Tasty Bites</span>
+                </div>
+                <div class="gallery-card medium fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Cozy Corners">
+                    <span class="tag">Perfect Ambiance</span>
+                </div>
+                <div class="gallery-card small fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Ambiance">
+                </div>
+                <div class="gallery-card small view-more fade-in-up">
+                    <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank" class="overlay-content">
+                        <i class="fab fa-instagram"></i>
+                        <span>VIEW ON INSTAGRAM</span>
+                    </a>
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad938667254?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Gallery">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="overline">VISIT US</span>
+                <h2>Find Us Here</h2>
+            </div>
+            <div class="contact-wrapper fade-in-up">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.3!2d72.8547!3d21.2108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f3e9c7a9a9f%3A0x8e9f9a9a9a9a9a9a!2sSilver%20Plaza%2C%20Varachha%2C%20Surat%2C%20Gujarat%20395010!5e0!3m2!1sen!2sin!4v1703580000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>Shop No. 18, 19, Silver Plaza<br>Varachha, Surat 395010</p>
+                            <a href="https://www.google.com/maps/search/The+Grenade+Cafe+Silver+Plaza+Varachha+Surat"
+                                target="_blank" class="info-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-content">
+                            <h4>Opening Hours</h4>
+                            <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="info-content">
+                            <h4>Contact Us</h4>
+                            <p><a href="https://wa.me/917435905500">+91 63554 70232</a></p>
+                            <a href="https://wa.me/917435905500?text=Hi!" target="_blank" class="info-link">Message on
+                                WhatsApp <i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank"
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/917435905500" target="_blank" class="social-icon"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') && link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
-        });
-    });
+    <!-- Reserve Section -->
+    <section class="reserve-section" id="reserve">
+        <div class="container">
+            <div class="reserve-wrapper fade-in-up">
+                <div class="reserve-content reserve-content-full">
+                    <span class="overline">READY TO VISIT?</span>
+                    <h2>Reserve Your <span class="text-lime">Table</span></h2>
+                    <p>Book ahead for a guaranteed spot at Varachha's favorite cafe.</p>
+                    <div class="reserve-features">
+                        <div class="reserve-feature"><i class="fas fa-comments"></i><span>Quick Response</span></div>
+                        <div class="reserve-feature"><i class="fas fa-users"></i><span>Groups Welcome</span></div>
+                        <div class="reserve-feature"><i class="fas fa-birthday-cake"></i><span>Celebrations</span></div>
+                    </div>
+                    <a href="https://wa.me/917435905500?text=Hi!%20I'd%20like%20to%20book%20a%20table." target="_blank"
+                        class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> Book Table on WhatsApp
+                    </a>
+                    <p class="reserve-note">We'll confirm your booking within minutes!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    // ============================================
-    // RESERVATION FORM - SEND TO WHATSAPP
-    // ============================================
-    const reservationForm = document.getElementById('reservationForm');
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-brand">
+                    <h3>The Grenade <span class="text-lime">Cafe</span></h3>
+                    <p>Where Great Food Meets a Perfect Vibe</p>
+                    <p class="footer-address">Silver Plaza, Varachha, Surat</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/the_grenade_cafe_restro" target="_blank">
+                        <i class="fab fa-instagram"></i> @the_grenade_cafe_restro
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 The Grenade Cafe & Restro. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    // Owner's WhatsApp number (with country code, no + or spaces)
-    const ownerWhatsAppNumber = '917435905500'; // Owner's WhatsApp number
+    <!-- Floating Bar -->
+    <div class="floating-bar">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <a href="https://wa.me/917435905500" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+917435905500" class="call-btn">
+            <i class="fas fa-phone"></i> Call Now
+        </a>
+    </div>
 
-    if (reservationForm) {
-        reservationForm.addEventListener('submit', function (e) {
-            e.preventDefault();
+    <script src="script.js"></script>
+</body>
 
-            // Get form values
-            const name = document.getElementById('name').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const guests = document.getElementById('guests').value;
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
-            const occasion = document.getElementById('occasion').value.trim();
-
-            // Format date for readability
-            const formattedDate = new Date(date).toLocaleDateString('en-IN', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-
-            // Format time for readability
-            const timeOptions = {
-                '11:00': '11:00 AM',
-                '12:00': '12:00 PM',
-                '13:00': '1:00 PM',
-                '14:00': '2:00 PM',
-                '15:00': '3:00 PM',
-                '16:00': '4:00 PM',
-                '17:00': '5:00 PM',
-                '18:00': '6:00 PM',
-                '19:00': '7:00 PM',
-                '20:00': '8:00 PM',
-                '21:00': '9:00 PM'
-            };
-            const formattedTime = timeOptions[time] || time;
-
-            // Build the WhatsApp message
-            let message = `🍽️ *NEW TABLE RESERVATION*\n`;
-            message += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
-            message += `👤 *Name:* ${name}\n`;
-            message += `📞 *Phone:* ${phone}\n`;
-            message += `👥 *Guests:* ${guests}\n`;
-            message += `📅 *Date:* ${formattedDate}\n`;
-            message += `🕐 *Time:* ${formattedTime}\n`;
-
-            if (occasion) {
-                message += `🎉 *Occasion:* ${occasion}\n`;
-            }
-
-            message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
-            message += `📍 _Sent from The Grenade Cafe Website_`;
-
-            // Encode the message for URL
-            const encodedMessage = encodeURIComponent(message);
-
-            // Create WhatsApp URL
-            const whatsappURL = `https://wa.me/${ownerWhatsAppNumber}?text=${encodedMessage}`;
-
-            // Show success feedback
-            const submitBtn = reservationForm.querySelector('.btn-submit');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-check"></i> Opening WhatsApp...';
-            submitBtn.style.background = 'var(--accent-lime)';
-
-            // Open WhatsApp in new tab
-            window.open(whatsappURL, '_blank');
-
-            // Reset button after delay
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.background = '';
-                // Reset the form after submission
-                reservationForm.reset();
-            }, 2000);
-        });
-    }
-});
-
+</html>
