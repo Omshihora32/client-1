@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reservationForm = document.getElementById('reservationForm');
 
     // Owner's WhatsApp number (with country code, no + or spaces)
-    const ownerWhatsAppNumber = '916355470232'; // Owner's WhatsApp number
+    const ownerWhatsAppNumber = '917435905500'; // Owner's WhatsApp number
 
     if (reservationForm) {
         reservationForm.addEventListener('submit', function (e) {
