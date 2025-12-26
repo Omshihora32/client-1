@@ -31,6 +31,32 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // ============================================
+    // MENU CATEGORY FILTER
+    // ============================================
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            menuTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            tab.classList.add('active');
+
+            const category = tab.dataset.category;
+
+            menuItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.classList.remove('hidden');
+                    item.style.animation = 'fadeInUp 0.5s ease forwards';
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    });
+
     // Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const closeMenu = document.querySelector('.close-menu');
